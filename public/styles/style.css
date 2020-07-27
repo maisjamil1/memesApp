@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(88, 139, 148);
+}
+
+#cont{
+    /* display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300,ifr));
+    grid-gap: 50px; */
+    display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+section{
+     margin: 20px;
+     padding: 20px; 
+    text-align: center; 
+    width: 200px;
+} 
+img{
+width: 90%;
+}

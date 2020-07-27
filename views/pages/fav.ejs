@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <h1> favorits</h1>
     <div id="cont">
         <%data.forEach((val,index)=>{%>
             <section>
@@ -16,14 +17,8 @@
                 <h4><%=index%></h4>
 <img src="<%=val.urll%>" alt="">
 <p>box_count : <%=val.box_count%></p>
-<form action="/addTofav" method="POST">
-<input type="text" name="namee" value="<%=val.namee%>">
-<input type="text" name="urll" value="<%=val.urll%>">
-<input type="text" name="box_count" value="<%=val.box_count%>">
+<a href="/details/<%=val.id%>"><button>show-details</button></a>
 
-
-    <button>add-to-favorite </button>
-</form>
 
         <%})%>
     </section>
