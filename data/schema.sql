@@ -1,0 +1,7 @@
+DROP TABLE IF EXISTS memestb;
+CREATE TABLE memestb(
+id SERIAL PRIMARY KEY,
+namee VARCHAR(255),
+urll VARCHAR(255),
+box_count NUMERIC(3)
+);
