@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>details page</h1>
+    <section>
+        <h2> <%=val.namee%></h2>
+        <img src="<%=val.urll%>" alt="">
+        <p>box_count : <%=val.box_count%></p>
+
+
+        <form action="/update/<%=val.id%>?_method=put" method="POST">
+            <input type="text" name="namee" value="<%=val.namee%>">
+            <input type="text" name="urll" value="<%=val.urll%>">
+            <input type="text" name="box_count" value="<%=val.box_count%>">
+
+
+            <button>update </button>
+        </form>
+        <form action="/delete/<%=val.id%>?_method=delete" method="POST">
+            <button>delete </button>
+        </form>
+    </section>
+</body>
+
+</html>
